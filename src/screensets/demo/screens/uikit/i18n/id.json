@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "Grup Radio",
+  "radio_group_default_label": "Default",
+  "radio_group_disabled_label": "Dengan opsi dinonaktifkan",
+  "radio_group_with_description_label": "Dengan deskripsi",
+  "radio_group_option_default": "Default",
+  "radio_group_option_comfortable": "Nyaman",
+  "radio_group_option_compact": "Kompak",
+  "radio_group_option_default_desc": "Spasi standar untuk sebagian besar antarmuka",
+  "radio_group_option_comfortable_desc": "Spasi lebih longgar untuk tata letak kaya konten",
+  "radio_group_option_compact_desc": "Spasi minimal untuk tampilan informasi padat"
 }

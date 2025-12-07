@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "Valintapainikkeet",
+  "radio_group_default_label": "Oletus",
+  "radio_group_disabled_label": "Käytöstä poistettu vaihtoehto",
+  "radio_group_with_description_label": "Kuvauksella",
+  "radio_group_option_default": "Oletus",
+  "radio_group_option_comfortable": "Mukava",
+  "radio_group_option_compact": "Kompakti",
+  "radio_group_option_default_desc": "Normaali välistys useimmille käyttöliittymille",
+  "radio_group_option_comfortable_desc": "Väljempi välistys sisältörikkaille asetteluille",
+  "radio_group_option_compact_desc": "Minimaalinen välistys tiheälle tietonäytölle"
 }

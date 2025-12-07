@@ -438,5 +438,15 @@
   "checkbox_terms": "قبول الشروط والأحكام",
   "checkbox_terms_description": "بالنقر على هذا المربع، فإنك توافق على الشروط والأحكام.",
   "checkbox_notifications": "تفعيل الإشعارات",
-  "checkbox_notifications_description": "يمكنك تفعيل أو تعطيل الإشعارات في أي وقت."
+  "checkbox_notifications_description": "يمكنك تفعيل أو تعطيل الإشعارات في أي وقت.",
+  "radio_group_heading": "مجموعة الراديو",
+  "radio_group_default_label": "افتراضي",
+  "radio_group_disabled_label": "مع خيار معطل",
+  "radio_group_with_description_label": "مع وصف",
+  "radio_group_option_default": "افتراضي",
+  "radio_group_option_comfortable": "مريح",
+  "radio_group_option_compact": "مضغوط",
+  "radio_group_option_default_desc": "تباعد قياسي لمعظم الواجهات",
+  "radio_group_option_comfortable_desc": "تباعد أكثر استرخاءً للتخطيطات الغنية بالمحتوى",
+  "radio_group_option_compact_desc": "تباعد ضئيل لعرض المعلومات الكثيفة"
 }

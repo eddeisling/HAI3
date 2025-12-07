@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "Nhóm Radio",
+  "radio_group_default_label": "Mặc định",
+  "radio_group_disabled_label": "Với tùy chọn bị vô hiệu hóa",
+  "radio_group_with_description_label": "Với mô tả",
+  "radio_group_option_default": "Mặc định",
+  "radio_group_option_comfortable": "Thoải mái",
+  "radio_group_option_compact": "Nhỏ gọn",
+  "radio_group_option_default_desc": "Khoảng cách tiêu chuẩn cho hầu hết giao diện",
+  "radio_group_option_comfortable_desc": "Khoảng cách thoải mái hơn cho bố cục nhiều nội dung",
+  "radio_group_option_compact_desc": "Khoảng cách tối thiểu để hiển thị thông tin dày đặc"
 }

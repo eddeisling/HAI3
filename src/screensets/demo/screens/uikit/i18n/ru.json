@@ -442,5 +442,15 @@
   "checkbox_terms": "Принять условия",
   "checkbox_terms_description": "Установив этот флажок, вы соглашаетесь с условиями.",
   "checkbox_notifications": "Включить уведомления",
-  "checkbox_notifications_description": "Вы можете включить или отключить уведомления в любое время."
+  "checkbox_notifications_description": "Вы можете включить или отключить уведомления в любое время.",
+  "radio_group_heading": "Радиогруппа",
+  "radio_group_default_label": "По умолчанию",
+  "radio_group_disabled_label": "С отключённой опцией",
+  "radio_group_with_description_label": "С описанием",
+  "radio_group_option_default": "По умолчанию",
+  "radio_group_option_comfortable": "Комфортный",
+  "radio_group_option_compact": "Компактный",
+  "radio_group_option_default_desc": "Стандартный интервал для большинства интерфейсов",
+  "radio_group_option_comfortable_desc": "Более свободный интервал для макетов с большим количеством контента",
+  "radio_group_option_compact_desc": "Минимальный интервал для плотного отображения информации"
 }

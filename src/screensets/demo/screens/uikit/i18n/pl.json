@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "Grupa przycisków opcji",
+  "radio_group_default_label": "Domyślny",
+  "radio_group_disabled_label": "Z wyłączoną opcją",
+  "radio_group_with_description_label": "Z opisem",
+  "radio_group_option_default": "Domyślny",
+  "radio_group_option_comfortable": "Wygodny",
+  "radio_group_option_compact": "Kompaktowy",
+  "radio_group_option_default_desc": "Standardowe odstępy dla większości interfejsów",
+  "radio_group_option_comfortable_desc": "Bardziej luźne odstępy dla układów bogatych w treść",
+  "radio_group_option_compact_desc": "Minimalne odstępy dla gęstego wyświetlania informacji"
 }

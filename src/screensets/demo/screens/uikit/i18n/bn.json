@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "রেডিও গ্রুপ",
+  "radio_group_default_label": "ডিফল্ট",
+  "radio_group_disabled_label": "অক্ষম বিকল্প সহ",
+  "radio_group_with_description_label": "বিবরণ সহ",
+  "radio_group_option_default": "ডিফল্ট",
+  "radio_group_option_comfortable": "আরামদায়ক",
+  "radio_group_option_compact": "কমপ্যাক্ট",
+  "radio_group_option_default_desc": "বেশিরভাগ ইন্টারফেসের জন্য স্ট্যান্ডার্ড স্পেসিং",
+  "radio_group_option_comfortable_desc": "কন্টেন্ট-ভারী লেআউটের জন্য আরও শিথিল স্পেসিং",
+  "radio_group_option_compact_desc": "ঘন তথ্য প্রদর্শনের জন্য ন্যূনতম স্পেসিং"
 }

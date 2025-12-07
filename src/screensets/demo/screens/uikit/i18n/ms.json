@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "Kumpulan Radio",
+  "radio_group_default_label": "Lalai",
+  "radio_group_disabled_label": "Dengan pilihan dilumpuhkan",
+  "radio_group_with_description_label": "Dengan penerangan",
+  "radio_group_option_default": "Lalai",
+  "radio_group_option_comfortable": "Selesa",
+  "radio_group_option_compact": "Kompak",
+  "radio_group_option_default_desc": "Jarak standard untuk kebanyakan antara muka",
+  "radio_group_option_comfortable_desc": "Jarak lebih longgar untuk susun atur kaya kandungan",
+  "radio_group_option_compact_desc": "Jarak minimum untuk paparan maklumat padat"
 }

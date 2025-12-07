@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "Kikundi cha Redio",
+  "radio_group_default_label": "Chaguo-msingi",
+  "radio_group_disabled_label": "Ikiwa na chaguo lisilofanya kazi",
+  "radio_group_with_description_label": "Pamoja na maelezo",
+  "radio_group_option_default": "Chaguo-msingi",
+  "radio_group_option_comfortable": "Starehe",
+  "radio_group_option_compact": "Kompakt",
+  "radio_group_option_default_desc": "Nafasi ya kawaida kwa violesura vingi",
+  "radio_group_option_comfortable_desc": "Nafasi iliyostarehe zaidi kwa mipangilio yenye maudhui mengi",
+  "radio_group_option_compact_desc": "Nafasi ndogo kwa kuonyesha habari iliyojaa"
 }

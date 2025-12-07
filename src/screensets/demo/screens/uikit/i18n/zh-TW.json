@@ -442,5 +442,15 @@
   "checkbox_terms": "接受條款和條件",
   "checkbox_terms_description": "點擊此核取方塊即表示您同意條款和條件。",
   "checkbox_notifications": "啟用通知",
-  "checkbox_notifications_description": "您可以隨時啟用或停用通知。"
+  "checkbox_notifications_description": "您可以隨時啟用或停用通知。",
+  "radio_group_heading": "選項群組",
+  "radio_group_default_label": "預設",
+  "radio_group_disabled_label": "包含停用選項",
+  "radio_group_with_description_label": "包含說明",
+  "radio_group_option_default": "預設",
+  "radio_group_option_comfortable": "舒適",
+  "radio_group_option_compact": "緊湊",
+  "radio_group_option_default_desc": "大多數介面的標準間距",
+  "radio_group_option_comfortable_desc": "內容豐富佈局的較寬鬆間距",
+  "radio_group_option_compact_desc": "密集資訊顯示的最小間距"
 }

@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "Radiogroep",
+  "radio_group_default_label": "Standaard",
+  "radio_group_disabled_label": "Met uitgeschakelde optie",
+  "radio_group_with_description_label": "Met beschrijving",
+  "radio_group_option_default": "Standaard",
+  "radio_group_option_comfortable": "Comfortabel",
+  "radio_group_option_compact": "Compact",
+  "radio_group_option_default_desc": "Standaard afstand voor de meeste interfaces",
+  "radio_group_option_comfortable_desc": "Meer ontspannen afstand voor content-rijke lay-outs",
+  "radio_group_option_compact_desc": "Minimale afstand voor dichte informatieweergave"
 }

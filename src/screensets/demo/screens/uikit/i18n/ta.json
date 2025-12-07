@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "ரேடியோ குழு",
+  "radio_group_default_label": "இயல்புநிலை",
+  "radio_group_disabled_label": "முடக்கப்பட்ட விருப்பத்துடன்",
+  "radio_group_with_description_label": "விளக்கத்துடன்",
+  "radio_group_option_default": "இயல்புநிலை",
+  "radio_group_option_comfortable": "வசதியான",
+  "radio_group_option_compact": "கச்சிதமான",
+  "radio_group_option_default_desc": "பெரும்பாலான இடைமுகங்களுக்கு நிலையான இடைவெளி",
+  "radio_group_option_comfortable_desc": "உள்ளடக்கம் நிறைந்த தளவமைப்புகளுக்கு தளர்வான இடைவெளி",
+  "radio_group_option_compact_desc": "அடர்த்தியான தகவல் காட்சிக்கு குறைந்தபட்ச இடைவெளி"
 }

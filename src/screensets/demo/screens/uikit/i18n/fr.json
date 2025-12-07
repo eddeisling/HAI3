@@ -442,5 +442,15 @@
   "checkbox_terms": "Accepter les conditions générales",
   "checkbox_terms_description": "En cochant cette case, vous acceptez les conditions générales.",
   "checkbox_notifications": "Activer les notifications",
-  "checkbox_notifications_description": "Vous pouvez activer ou désactiver les notifications à tout moment."
+  "checkbox_notifications_description": "Vous pouvez activer ou désactiver les notifications à tout moment.",
+  "radio_group_heading": "Groupe Radio",
+  "radio_group_default_label": "Par défaut",
+  "radio_group_disabled_label": "Avec option désactivée",
+  "radio_group_with_description_label": "Avec description",
+  "radio_group_option_default": "Par défaut",
+  "radio_group_option_comfortable": "Confortable",
+  "radio_group_option_compact": "Compact",
+  "radio_group_option_default_desc": "Espacement standard pour la plupart des interfaces",
+  "radio_group_option_comfortable_desc": "Espacement plus détendu pour les mises en page riches en contenu",
+  "radio_group_option_compact_desc": "Espacement minimal pour un affichage d'informations dense"
 }

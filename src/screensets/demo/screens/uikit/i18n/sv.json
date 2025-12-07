@@ -442,5 +442,15 @@
   "checkbox_terms": "Accept terms and conditions",
   "checkbox_terms_description": "By clicking this checkbox, you agree to the terms and conditions.",
   "checkbox_notifications": "Enable notifications",
-  "checkbox_notifications_description": "You can enable or disable notifications at any time."
+  "checkbox_notifications_description": "You can enable or disable notifications at any time.",
+  "radio_group_heading": "Radiogrupp",
+  "radio_group_default_label": "Standard",
+  "radio_group_disabled_label": "Med inaktiverat alternativ",
+  "radio_group_with_description_label": "Med beskrivning",
+  "radio_group_option_default": "Standard",
+  "radio_group_option_comfortable": "Bekväm",
+  "radio_group_option_compact": "Kompakt",
+  "radio_group_option_default_desc": "Standardavstånd för de flesta gränssnitt",
+  "radio_group_option_comfortable_desc": "Mer avslappnat avstånd för innehållsrika layouter",
+  "radio_group_option_compact_desc": "Minimalt avstånd för tät informationsvisning"
 }

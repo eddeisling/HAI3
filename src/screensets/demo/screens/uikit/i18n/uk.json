@@ -442,5 +442,15 @@
   "checkbox_terms": "Прийняти умови",
   "checkbox_terms_description": "Встановивши цей прапорець, ви погоджуєтесь з умовами.",
   "checkbox_notifications": "Увімкнути сповіщення",
-  "checkbox_notifications_description": "Ви можете вмикати або вимикати сповіщення в будь-який час."
+  "checkbox_notifications_description": "Ви можете вмикати або вимикати сповіщення в будь-який час.",
+  "radio_group_heading": "Радіогрупа",
+  "radio_group_default_label": "За замовчуванням",
+  "radio_group_disabled_label": "З вимкненою опцією",
+  "radio_group_with_description_label": "З описом",
+  "radio_group_option_default": "За замовчуванням",
+  "radio_group_option_comfortable": "Комфортний",
+  "radio_group_option_compact": "Компактний",
+  "radio_group_option_default_desc": "Стандартний інтервал для більшості інтерфейсів",
+  "radio_group_option_comfortable_desc": "Більш вільний інтервал для макетів з великою кількістю контенту",
+  "radio_group_option_compact_desc": "Мінімальний інтервал для щільного відображення інформації"
 }

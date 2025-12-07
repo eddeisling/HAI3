@@ -442,5 +442,15 @@
   "checkbox_terms": "利用規約に同意する",
   "checkbox_terms_description": "このチェックボックスをクリックすると、利用規約に同意したことになります。",
   "checkbox_notifications": "通知を有効にする",
-  "checkbox_notifications_description": "いつでも通知を有効または無効にできます。"
+  "checkbox_notifications_description": "いつでも通知を有効または無効にできます。",
+  "radio_group_heading": "ラジオグループ",
+  "radio_group_default_label": "デフォルト",
+  "radio_group_disabled_label": "無効オプション付き",
+  "radio_group_with_description_label": "説明付き",
+  "radio_group_option_default": "デフォルト",
+  "radio_group_option_comfortable": "快適",
+  "radio_group_option_compact": "コンパクト",
+  "radio_group_option_default_desc": "ほとんどのインターフェース用の標準間隔",
+  "radio_group_option_comfortable_desc": "コンテンツの多いレイアウト用のゆったりした間隔",
+  "radio_group_option_compact_desc": "密な情報表示用の最小間隔"
 }

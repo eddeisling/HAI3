@@ -442,5 +442,15 @@
   "checkbox_terms": "接受条款和条件",
   "checkbox_terms_description": "点击此复选框即表示您同意条款和条件。",
   "checkbox_notifications": "启用通知",
-  "checkbox_notifications_description": "您可以随时启用或禁用通知。"
+  "checkbox_notifications_description": "您可以随时启用或禁用通知。",
+  "radio_group_heading": "选项组",
+  "radio_group_default_label": "默认",
+  "radio_group_disabled_label": "包含禁用选项",
+  "radio_group_with_description_label": "包含说明",
+  "radio_group_option_default": "默认",
+  "radio_group_option_comfortable": "舒适",
+  "radio_group_option_compact": "紧凑",
+  "radio_group_option_default_desc": "大多数界面的标准间距",
+  "radio_group_option_comfortable_desc": "内容丰富布局的较宽松间距",
+  "radio_group_option_compact_desc": "密集信息显示的最小间距"
 }

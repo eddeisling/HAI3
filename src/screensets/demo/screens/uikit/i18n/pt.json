@@ -442,5 +442,15 @@
   "checkbox_terms": "Aceitar termos e condições",
   "checkbox_terms_description": "Ao marcar esta caixa, você concorda com os termos e condições.",
   "checkbox_notifications": "Ativar notificações",
-  "checkbox_notifications_description": "Você pode ativar ou desativar as notificações a qualquer momento."
+  "checkbox_notifications_description": "Você pode ativar ou desativar as notificações a qualquer momento.",
+  "radio_group_heading": "Grupo de Rádio",
+  "radio_group_default_label": "Padrão",
+  "radio_group_disabled_label": "Com opção desativada",
+  "radio_group_with_description_label": "Com descrição",
+  "radio_group_option_default": "Padrão",
+  "radio_group_option_comfortable": "Confortável",
+  "radio_group_option_compact": "Compacto",
+  "radio_group_option_default_desc": "Espaçamento padrão para a maioria das interfaces",
+  "radio_group_option_comfortable_desc": "Espaçamento mais relaxado para layouts ricos em conteúdo",
+  "radio_group_option_compact_desc": "Espaçamento mínimo para exibição densa de informações"
 }

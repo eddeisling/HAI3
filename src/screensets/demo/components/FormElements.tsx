@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Checkbox, Switch, Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, Textarea } from '@hai3/uikit';
+import { Checkbox, RadioGroup, RadioGroupItem, Switch, Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue, Textarea } from '@hai3/uikit';
 import { useTranslation, TextLoader } from '@hai3/uicore';
 import { DEMO_SCREENSET_ID } from "../ids";
 import { UI_KIT_ELEMENTS_SCREEN_ID } from "../ids";
@@ -94,6 +94,102 @@ export const FormElements: React.FC = () => {
                 </p>
               </div>
             </label>
+          </div>
+        </div>
+      </div>
+
+      {/* Radio Group Element Block */}
+      <div data-element-id="element-radio-group" className="flex flex-col gap-4">
+        <TextLoader skeletonClassName="h-8 w-32">
+          <h2 className="text-2xl font-semibold">
+            {tk('radio_group_heading')}
+          </h2>
+        </TextLoader>
+        <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background overflow-hidden">
+          {/* Default Radio Group */}
+          <div className="flex flex-col gap-2">
+            <TextLoader skeletonClassName="h-4 w-24" inheritColor>
+              <label className="text-xs text-muted-foreground">
+                {tk('radio_group_default_label')}
+              </label>
+            </TextLoader>
+            <RadioGroup defaultValue="comfortable">
+              <div className="flex items-center gap-3">
+                <RadioGroupItem value="default" id="rg-default" />
+                <FormLabel htmlFor="rg-default">{tk('radio_group_option_default')}</FormLabel>
+              </div>
+              <div className="flex items-center gap-3">
+                <RadioGroupItem value="comfortable" id="rg-comfortable" />
+                <FormLabel htmlFor="rg-comfortable">{tk('radio_group_option_comfortable')}</FormLabel>
+              </div>
+              <div className="flex items-center gap-3">
+                <RadioGroupItem value="compact" id="rg-compact" />
+                <FormLabel htmlFor="rg-compact">{tk('radio_group_option_compact')}</FormLabel>
+              </div>
+            </RadioGroup>
+          </div>
+
+          {/* Disabled Radio Group */}
+          <div className="flex flex-col gap-2">
+            <TextLoader skeletonClassName="h-4 w-32" inheritColor>
+              <label className="text-xs text-muted-foreground">
+                {tk('radio_group_disabled_label')}
+              </label>
+            </TextLoader>
+            <RadioGroup defaultValue="default">
+              <div className="flex items-center gap-3">
+                <RadioGroupItem value="default" id="rg-dis-default" />
+                <FormLabel htmlFor="rg-dis-default">{tk('radio_group_option_default')}</FormLabel>
+              </div>
+              <div className="flex items-center gap-3">
+                <RadioGroupItem value="comfortable" id="rg-dis-comfortable" disabled />
+                <FormLabel htmlFor="rg-dis-comfortable" className="text-muted-foreground">{tk('radio_group_option_comfortable')}</FormLabel>
+              </div>
+            </RadioGroup>
+          </div>
+
+          {/* Radio Group with Description */}
+          <div className="flex flex-col gap-2">
+            <TextLoader skeletonClassName="h-4 w-32" inheritColor>
+              <label className="text-xs text-muted-foreground">
+                {tk('radio_group_with_description_label')}
+              </label>
+            </TextLoader>
+            <RadioGroup defaultValue="default" className="gap-4">
+              <label className="hover:bg-accent/50 flex items-start gap-3 rounded-lg border p-3 has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-primary/10 max-w-sm cursor-pointer">
+                <RadioGroupItem value="default" id="rg-desc-default" className="mt-0.5" />
+                <div className="grid gap-1 font-normal">
+                  <p className="text-sm leading-none font-medium">
+                    {tk('radio_group_option_default')}
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    {tk('radio_group_option_default_desc')}
+                  </p>
+                </div>
+              </label>
+              <label className="hover:bg-accent/50 flex items-start gap-3 rounded-lg border p-3 has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-primary/10 max-w-sm cursor-pointer">
+                <RadioGroupItem value="comfortable" id="rg-desc-comfortable" className="mt-0.5" />
+                <div className="grid gap-1 font-normal">
+                  <p className="text-sm leading-none font-medium">
+                    {tk('radio_group_option_comfortable')}
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    {tk('radio_group_option_comfortable_desc')}
+                  </p>
+                </div>
+              </label>
+              <label className="hover:bg-accent/50 flex items-start gap-3 rounded-lg border p-3 has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-primary/10 max-w-sm cursor-pointer">
+                <RadioGroupItem value="compact" id="rg-desc-compact" className="mt-0.5" />
+                <div className="grid gap-1 font-normal">
+                  <p className="text-sm leading-none font-medium">
+                    {tk('radio_group_option_compact')}
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    {tk('radio_group_option_compact_desc')}
+                  </p>
+                </div>
+              </label>
+            </RadioGroup>
           </div>
         </div>
       </div>

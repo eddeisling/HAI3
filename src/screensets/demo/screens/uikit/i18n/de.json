@@ -442,5 +442,15 @@
   "checkbox_terms": "Geschäftsbedingungen akzeptieren",
   "checkbox_terms_description": "Durch Anklicken stimmen Sie den Geschäftsbedingungen zu.",
   "checkbox_notifications": "Benachrichtigungen aktivieren",
-  "checkbox_notifications_description": "Sie können Benachrichtigungen jederzeit aktivieren oder deaktivieren."
+  "checkbox_notifications_description": "Sie können Benachrichtigungen jederzeit aktivieren oder deaktivieren.",
+  "radio_group_heading": "Optionsgruppe",
+  "radio_group_default_label": "Standard",
+  "radio_group_disabled_label": "Mit deaktivierter Option",
+  "radio_group_with_description_label": "Mit Beschreibung",
+  "radio_group_option_default": "Standard",
+  "radio_group_option_comfortable": "Komfortabel",
+  "radio_group_option_compact": "Kompakt",
+  "radio_group_option_default_desc": "Standardabstand für die meisten Oberflächen",
+  "radio_group_option_comfortable_desc": "Entspannterer Abstand für inhaltsreiche Layouts",
+  "radio_group_option_compact_desc": "Minimaler Abstand für dichte Informationsanzeige"
 }

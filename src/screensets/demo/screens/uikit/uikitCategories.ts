@@ -187,6 +187,7 @@ export const IMPLEMENTED_ELEMENTS = [
   'Pagination',
   'Popover',
   'Progress',
+  'Radio Group',
   'Resizable',
   'Scroll Area',
   'Select',
