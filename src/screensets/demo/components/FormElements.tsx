@@ -88,7 +88,7 @@ export const FormElements: React.FC = () => {
               selected={dateRange}
               onSelect={setDateRange}
               numberOfMonths={2}
-              className="rounded-lg border shadow-sm [--cell-size:--spacing(11)] md:[--cell-size:--spacing(12)]"
+              className="rounded-lg border shadow-sm"
             />
           </div>
 
