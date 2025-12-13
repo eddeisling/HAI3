@@ -41,20 +41,20 @@ export enum Language {
   Italian = 'it',
   Portuguese = 'pt',
   Dutch = 'nl',
-  
+
   // Eastern European
   Russian = 'ru',
   Polish = 'pl',
   Ukrainian = 'uk',
   Czech = 'cs',
-  
+
   // Middle East & North Africa (RTL)
   Arabic = 'ar',
   Hebrew = 'he',
   Persian = 'fa',
   Urdu = 'ur',
   Turkish = 'tr',
-  
+
   // Asian
   ChineseSimplified = 'zh',
   ChineseTraditional = 'zh-TW',
@@ -65,18 +65,18 @@ export enum Language {
   Indonesian = 'id',
   Hindi = 'hi',
   Bengali = 'bn',
-  
+
   // Nordic
   Swedish = 'sv',
   Danish = 'da',
   Norwegian = 'no',
   Finnish = 'fi',
-  
+
   // Other
   Greek = 'el',
   Romanian = 'ro',
   Hungarian = 'hu',
-  
+
   // Additional major languages
   Malay = 'ms',
   Tagalog = 'tl',
@@ -104,20 +104,20 @@ export const SUPPORTED_LANGUAGES: LanguageMetadata[] = [
   { code: Language.Italian, name: 'Italiano', englishName: 'Italian', direction: TextDirection.LeftToRight },
   { code: Language.Portuguese, name: 'Português', englishName: 'Portuguese', direction: TextDirection.LeftToRight },
   { code: Language.Dutch, name: 'Nederlands', englishName: 'Dutch', direction: TextDirection.LeftToRight },
-  
+
   // Eastern European
   { code: Language.Russian, name: 'Русский', englishName: 'Russian', direction: TextDirection.LeftToRight },
   { code: Language.Polish, name: 'Polski', englishName: 'Polish', direction: TextDirection.LeftToRight },
   { code: Language.Ukrainian, name: 'Українська', englishName: 'Ukrainian', direction: TextDirection.LeftToRight },
   { code: Language.Czech, name: 'Čeština', englishName: 'Czech', direction: TextDirection.LeftToRight },
-  
+
   // Middle East & North Africa (RTL)
   { code: Language.Arabic, name: 'العربية', englishName: 'Arabic', direction: TextDirection.RightToLeft },
   { code: Language.Hebrew, name: 'עברית', englishName: 'Hebrew', direction: TextDirection.RightToLeft },
   { code: Language.Persian, name: 'فارسی', englishName: 'Persian', direction: TextDirection.RightToLeft },
   { code: Language.Urdu, name: 'اردو', englishName: 'Urdu', direction: TextDirection.RightToLeft },
   { code: Language.Turkish, name: 'Türkçe', englishName: 'Turkish', direction: TextDirection.LeftToRight },
-  
+
   // Asian
   { code: Language.ChineseSimplified, name: '中文', englishName: 'Chinese (Simplified)', direction: TextDirection.LeftToRight },
   { code: Language.ChineseTraditional, name: '繁體中文', englishName: 'Chinese (Traditional)', direction: TextDirection.LeftToRight, region: 'TW' },
@@ -128,18 +128,18 @@ export const SUPPORTED_LANGUAGES: LanguageMetadata[] = [
   { code: Language.Indonesian, name: 'Bahasa Indonesia', englishName: 'Indonesian', direction: TextDirection.LeftToRight },
   { code: Language.Hindi, name: 'हिन्दी', englishName: 'Hindi', direction: TextDirection.LeftToRight },
   { code: Language.Bengali, name: 'বাংলা', englishName: 'Bengali', direction: TextDirection.LeftToRight },
-  
+
   // Nordic
   { code: Language.Swedish, name: 'Svenska', englishName: 'Swedish', direction: TextDirection.LeftToRight },
   { code: Language.Danish, name: 'Dansk', englishName: 'Danish', direction: TextDirection.LeftToRight },
   { code: Language.Norwegian, name: 'Norsk', englishName: 'Norwegian', direction: TextDirection.LeftToRight },
   { code: Language.Finnish, name: 'Suomi', englishName: 'Finnish', direction: TextDirection.LeftToRight },
-  
+
   // Other major languages
   { code: Language.Greek, name: 'Ελληνικά', englishName: 'Greek', direction: TextDirection.LeftToRight },
   { code: Language.Romanian, name: 'Română', englishName: 'Romanian', direction: TextDirection.LeftToRight },
   { code: Language.Hungarian, name: 'Magyar', englishName: 'Hungarian', direction: TextDirection.LeftToRight },
-  
+
   // Additional major languages
   { code: Language.Malay, name: 'Bahasa Melayu', englishName: 'Malay', direction: TextDirection.LeftToRight },
   { code: Language.Tagalog, name: 'Tagalog', englishName: 'Tagalog', direction: TextDirection.LeftToRight },

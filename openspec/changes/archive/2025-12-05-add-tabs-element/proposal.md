@@ -15,4 +15,3 @@ The Navigation category needs a Tabs component for organizing content into switc
 - Affected specs: uikit-base
 - Fifth implemented element in Navigation category
 - Completes the Navigation category elements list
-

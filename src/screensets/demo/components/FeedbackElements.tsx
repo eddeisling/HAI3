@@ -12,10 +12,10 @@ import { UI_KIT_ELEMENTS_SCREEN_ID } from "../ids";
  */
 export const FeedbackElements: React.FC = () => {
   const { t } = useTranslation();
-  
+
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
-  
+
   const [progressValue, setProgressValue] = useState(33);
 
   return (
@@ -48,16 +48,16 @@ export const FeedbackElements: React.FC = () => {
                 </TextLoader>
               </div>
             </div>
-            
+
             <div className="flex flex-col gap-2">
               <TextLoader skeletonClassName="h-4 w-36" inheritColor>
                 <label className="text-sm font-medium">
                   {tk('progress_destructive_label')}
                 </label>
               </TextLoader>
-              <Progress 
-                value={progressValue} 
-                className="bg-destructive/20 [&>div]:bg-destructive" 
+              <Progress
+                value={progressValue}
+                className="bg-destructive/20 [&>div]:bg-destructive"
               />
               <div className="flex justify-between text-xs text-muted-foreground">
                 <span>{progressValue}%</span>
@@ -89,7 +89,7 @@ export const FeedbackElements: React.FC = () => {
             <Spinner size="size-6" className="text-primary" />
             <Spinner size="size-8" className="text-primary" />
             <Spinner size="size-12" className="text-primary" />
-            
+
             {/* Different colors */}
             <Spinner icon={LoaderIcon} size="size-6" className="text-primary" />
             <Spinner icon={LoaderIcon} size="size-6" className="text-destructive" />
@@ -125,4 +125,3 @@ export const FeedbackElements: React.FC = () => {
 };
 
 FeedbackElements.displayName = 'FeedbackElements';
-

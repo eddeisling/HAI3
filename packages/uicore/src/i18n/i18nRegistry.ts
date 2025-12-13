@@ -115,10 +115,10 @@ export class I18nRegistry {
   }
   private dictionaries = new Map<string, Map<Language, TranslationDictionary>>();
   // namespace → language → translations
-  
+
   private loaders = new Map<string, TranslationLoader>();
   // namespace → loader function
-  
+
   private currentLanguage: Language | null = null; // null until first language is set
 
   constructor(_config?: Partial<I18nConfig>) {
@@ -355,7 +355,7 @@ export class I18nRegistry {
   /**
    * Preload translations for multiple languages
    * Useful for loading common languages eagerly
-   * 
+   *
    * @param languages - Array of languages to preload
    */
   async preloadLanguages(languages: Language[]): Promise<void> {
@@ -389,7 +389,7 @@ export class I18nRegistry {
 
     const keys = path.split(I18N_PATH_SEPARATOR);
     let value: TranslationDictionary | string = dict;
-    
+
     for (const key of keys) {
       if (typeof value === 'string') return null;
       value = value[key];
@@ -405,7 +405,7 @@ export class I18nRegistry {
    */
   private interpolate(text: string, params?: Record<string, string | number | boolean>): string {
     if (!params) return text;
-    
+
     return text.replace(/\{(\w+)\}/g, (match, key) => {
       const value = params[key];
       return value !== undefined ? String(value) : match;

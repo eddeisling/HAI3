@@ -43,16 +43,16 @@ export interface HAI3ProviderProps {
 
 /**
  * HAI3Provider - Main wrapper for HAI3 applications
- * 
+ *
  * Includes:
  * - Redux Provider with UI Core store
  * - AppRouter with dynamic routing
- * 
+ *
  * Apps only need to:
  * 1. Import theme/screenset registries (auto-register)
  * 2. Register core icons in App component
  * 3. Configure domains in App component
- * 
+ *
  * @example
  * ```tsx
  * // main.tsx
@@ -62,11 +62,11 @@ export interface HAI3ProviderProps {
  *   </HAI3Provider>,
  *   root
  * );
- * 
+ *
  * // App.tsx
  * import '@/themes/themeRegistry';
  * import '@/screensets/screensetRegistry';
- * 
+ *
  * export const App = () => {
  *   // Register icons, configure domains
  *   return null; // HAI3Provider renders AppRouter

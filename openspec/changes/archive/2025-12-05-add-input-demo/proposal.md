@@ -15,4 +15,3 @@ The Input component is already implemented in the UI kit but lacks usage example
 ## Impact
 - Affected specs: uikit-base
 - First Forms & Inputs element with demo examples (alongside existing Select and Switch)
-

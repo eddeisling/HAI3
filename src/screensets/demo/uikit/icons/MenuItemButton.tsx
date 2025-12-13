@@ -6,7 +6,7 @@ export interface MenuItemButtonProps extends React.ButtonHTMLAttributes<HTMLButt
    * Whether the item is currently active/selected
    */
   isActive?: boolean;
-  
+
   /**
    * Children content (label)
    */
@@ -26,7 +26,7 @@ export const MenuItemButton = forwardRef<HTMLButtonElement, MenuItemButtonProps>
 }, ref) => {
   // Base styles
   const baseStyles = 'w-full text-left px-3 py-1.5 text-sm rounded-md transition-colors';
-  
+
   // State-dependent styles
   const stateStyles = isActive
     ? 'text-primary font-medium bg-accent/50'
@@ -46,4 +46,3 @@ export const MenuItemButton = forwardRef<HTMLButtonElement, MenuItemButtonProps>
 });
 
 MenuItemButton.displayName = 'MenuItemButton';
-

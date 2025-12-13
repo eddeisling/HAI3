@@ -19,4 +19,3 @@ The Forms & Inputs category needs a Checkbox component for boolean input selecti
 - Affected specs: uikit-base
 - Third Forms & Inputs element with demo examples
 - Reuses existing CheckIcon from uikit icons
-

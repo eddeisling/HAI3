@@ -12,7 +12,7 @@ import { UI_KIT_ELEMENTS_SCREEN_ID } from "../ids";
  */
 export const LayoutElements: React.FC = () => {
   const { t } = useTranslation();
-  
+
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
 
@@ -726,4 +726,3 @@ export const LayoutElements: React.FC = () => {
 };
 
 LayoutElements.displayName = 'LayoutElements';
-

@@ -1085,4 +1085,3 @@ AI agents and developers SHALL prioritize using global @hai3/uikit components be
 **When** AI agent proposes creating screenset uikit/base/ component
 **Then** the proposal SHALL include justification explaining why global uikit is insufficient
 **And** the justification SHALL explain why this cannot be a composite instead
-

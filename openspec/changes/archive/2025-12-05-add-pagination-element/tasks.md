@@ -10,4 +10,3 @@
 - [x] Add pagination translations to all 36 language files
 - [x] Build packages and verify TypeScript compilation
 - [ ] Visual verification in browser
-

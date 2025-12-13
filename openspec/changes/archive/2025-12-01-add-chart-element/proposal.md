@@ -22,4 +22,3 @@ The UI Kit demo currently lacks a Chart component in the Data Display category. 
   - `src/screensets/demo/components/DataDisplayElements.tsx` - Add Chart examples
   - `src/screensets/demo/screens/uikit/i18n/*.json` - Add translations (36 files)
   - `src/screensets/demo/screens/uikit/uikitCategories.ts` - Update categories
-

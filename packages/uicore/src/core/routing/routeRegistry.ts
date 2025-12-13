@@ -42,13 +42,13 @@ class RouteRegistry {
         });
       });
     });
-    
+
     // Only cache if we found screensets (prevents caching empty state)
     if (screensets.length > 0) {
       this.synced = true;
     }
   }
-  
+
   /**
    * Ensure routes are synced (lazy initialization)
    * Prevents race conditions by syncing on first access

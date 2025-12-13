@@ -2,7 +2,7 @@
  * App Effects - Side effects for application-level state
  * Subscribes to user and API events, updates app slice
  * Implements Flux pattern: Event -> Effect -> Slice Update
- * 
+ *
  * Pattern: 1 slice = 1 effects file
  * All events that update appSlice are handled here
  */

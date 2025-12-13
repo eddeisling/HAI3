@@ -148,7 +148,7 @@ export function getCategoryById(categoryId: string): UIKitCategory | undefined {
  * Get category ID for an element
  */
 export function getCategoryIdForElement(elementName: string): string | undefined {
-  const category = UIKIT_CATEGORIES.find(cat => 
+  const category = UIKIT_CATEGORIES.find(cat =>
     cat.elements.includes(elementName)
   );
   return category?.id;
@@ -205,4 +205,3 @@ export const IMPLEMENTED_ELEMENTS = [
   'Textarea',
   'Tooltip',
 ];
-

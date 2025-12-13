@@ -12,9 +12,9 @@ const DropdownMenu: React.FC<
     dir?: TextDirection;
   }
 > = ({ dir, ...props }) => (
-  <DropdownMenuPrimitive.Root 
-    {...props} 
-    dir={dir as 'ltr' | 'rtl' | undefined} 
+  <DropdownMenuPrimitive.Root
+    {...props}
+    dir={dir as 'ltr' | 'rtl' | undefined}
   />
 );
 DropdownMenu.displayName = "DropdownMenu";

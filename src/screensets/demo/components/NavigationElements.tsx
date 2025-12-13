@@ -1,11 +1,11 @@
 import React from 'react';
-import { 
-  Breadcrumb, 
-  BreadcrumbList, 
-  BreadcrumbItem, 
-  BreadcrumbLink, 
-  BreadcrumbPage, 
-  BreadcrumbSeparator, 
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
   BreadcrumbEllipsis,
   DropdownMenu,
   DropdownMenuTrigger,
@@ -66,7 +66,7 @@ export const NavigationElements: React.FC = () => {
   const [showBookmarksBar, setShowBookmarksBar] = React.useState(false);
   const [showFullUrls, setShowFullUrls] = React.useState(true);
   const [selectedProfile, setSelectedProfile] = React.useState("benoit");
-  
+
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
 
@@ -241,14 +241,14 @@ export const NavigationElements: React.FC = () => {
             <MenubarMenu>
               <MenubarTrigger>{tk('menubar_view')}</MenubarTrigger>
               <MenubarContent>
-                <MenubarCheckboxItem 
-                  checked={showBookmarksBar} 
+                <MenubarCheckboxItem
+                  checked={showBookmarksBar}
                   onCheckedChange={setShowBookmarksBar}
                 >
                   {tk('menubar_always_show_bookmarks')}
                 </MenubarCheckboxItem>
-                <MenubarCheckboxItem 
-                  checked={showFullUrls} 
+                <MenubarCheckboxItem
+                  checked={showFullUrls}
                   onCheckedChange={setShowFullUrls}
                 >
                   {tk('menubar_always_show_full_urls')}
@@ -533,4 +533,3 @@ export const NavigationElements: React.FC = () => {
 NavigationElements.displayName = 'NavigationElements';
 
 export default NavigationElements;
-

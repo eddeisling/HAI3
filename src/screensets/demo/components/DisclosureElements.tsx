@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { 
-  Collapsible, 
-  CollapsibleTrigger, 
-  CollapsibleContent, 
+import {
+  Collapsible,
+  CollapsibleTrigger,
+  CollapsibleContent,
   Accordion,
   AccordionItem,
   AccordionTrigger,
@@ -24,7 +24,7 @@ export const DisclosureElements: React.FC = () => {
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
-  
+
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
 
@@ -38,7 +38,7 @@ export const DisclosureElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background overflow-hidden">
-          
+
           {/* Basic Accordion - Single Item */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-32" inheritColor>
@@ -167,7 +167,7 @@ export const DisclosureElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background overflow-hidden">
-          
+
           {/* Basic Collapsible */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-32" inheritColor>
@@ -268,4 +268,3 @@ export const DisclosureElements: React.FC = () => {
 };
 
 DisclosureElements.displayName = 'DisclosureElements';
-

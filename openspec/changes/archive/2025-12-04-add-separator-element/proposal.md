@@ -18,4 +18,3 @@ The UI Kit needs a Separator component to visually divide content sections. The 
   - `src/screensets/demo/components/LayoutElements.tsx` (demo example)
   - `src/screensets/demo/screens/uikit/uikitCategories.ts` (IMPLEMENTED_ELEMENTS)
   - `src/screensets/demo/screens/uikit/i18n/*.json` (translations for 36 languages)
-

@@ -210,7 +210,7 @@ export const DataDisplayElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background">
-          
+
           {/* Line Chart */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-20" inheritColor>

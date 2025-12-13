@@ -74,4 +74,3 @@ The system SHALL provide Aspect Ratio translations across all supported language
 - **WHEN** checking translation files in `src/screensets/demo/screens/uikit/i18n/`
 - **THEN** all 36 language files include Aspect Ratio translation keys
 - **AND** translations are contextually appropriate for each language
-

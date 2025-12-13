@@ -7,21 +7,21 @@ import { TextDirection, type Language, type LanguageMetadata } from './types';
 
 /**
  * React hook for translations
- * 
+ *
  * Features:
  * - Reactive to language changes (no reload needed)
  * - Type-safe translation keys
  * - Parameter interpolation
  * - RTL/LTR direction support
- * 
+ *
  * @example
  * ```tsx
  * import { useTranslation, Language } from '@hai3/uicore';
  * import { Skeleton } from '@hai3/uikit';
- * 
+ *
  * function MyComponent() {
  *   const { t, language, direction, translationsReady, changeLanguage } = useTranslation();
- *   
+ *
  *   return (
  *     <div>
  *       {translationsReady ? (

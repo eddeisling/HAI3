@@ -27,4 +27,3 @@ export const StarIcon: React.FC<{ className?: string }> = ({ className = '' }) =
     </svg>
   );
 };
-

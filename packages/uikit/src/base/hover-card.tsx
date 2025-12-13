@@ -40,4 +40,3 @@ const HoverCardContent = React.forwardRef<
 HoverCardContent.displayName = "HoverCardContent"
 
 export { HoverCard, HoverCardTrigger, HoverCardContent }
-

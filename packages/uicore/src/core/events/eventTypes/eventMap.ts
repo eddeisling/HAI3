@@ -2,7 +2,7 @@
  * Event Type Map - Unified type safety for all events
  * Combines all namespace event maps into single type
  * Provides compile-time safety: event type <-> payload mismatch caught at build time
- * 
+ *
  * EXTENSIBLE: Screensets can add their own events via module augmentation
  */
 
@@ -18,7 +18,7 @@ import type { I18nEventPayloadMap } from './i18nEvents';
  * Global Event Payload Map
  * Central registry of ALL events in the app
  * Maps event keys (strings) to payload types
- * 
+ *
  * Screensets can augment this via module augmentation:
  * ```typescript
  * // In your screenset code
@@ -28,7 +28,7 @@ import type { I18nEventPayloadMap } from './i18nEvents';
  *   }
  * }
  * ```
- * 
+ *
  * Design: Interface (not type) to support declaration merging
  * Naming: PascalCase per TypeScript interface convention
  */

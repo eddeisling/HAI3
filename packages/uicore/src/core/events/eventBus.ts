@@ -2,7 +2,7 @@
  * Event Bus - Central event emitter for domain communication
  * Implements Observable pattern for loose coupling between domains
  * Based on RxJS Subject pattern but lightweight
- * 
+ *
  * Type Safety: EventPayloadMap ensures emit/on use correct payload per event
  */
 
@@ -45,7 +45,7 @@ class EventBus {
     if (!this.handlers.has(eventType)) {
       this.handlers.set(eventType, new Set());
     }
-    
+
     // Cast is safe because we control the payload type at emit time
     this.handlers.get(eventType)!.add(handler as EventHandler<unknown>);
 
@@ -74,7 +74,7 @@ class EventBus {
       handler(payload);
       subscription.unsubscribe();
     };
-    
+
     const subscription = this.on(eventType, wrappedHandler);
     return subscription;
   }

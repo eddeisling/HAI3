@@ -12,4 +12,3 @@ The Navigation Menu component is already implemented in the uikit package but la
 - Affected specs: uikit-base
 - Third implemented element in Navigation category (after Breadcrumb, Menubar)
 - No new dependencies required - component already exists
-

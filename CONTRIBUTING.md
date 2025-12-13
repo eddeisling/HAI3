@@ -1,6 +1,6 @@
 # Contributing to HAI3 Dev Kit
 
-> **TARGET AUDIENCE:** Humans  
+> **TARGET AUDIENCE:** Humans
 > **PURPOSE:** Contribution guidelines and workflow for developers
 
 Thank you for your interest in contributing to HAI3 Dev Kit! This document provides guidelines and information for contributors.

@@ -138,12 +138,12 @@ async function checkFigmaServerAvailable(): Promise<boolean> {
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 1000);
-    
+
     const response = await fetch(FIGMA_SERVER_URL, {
       method: 'GET',
       signal: controller.signal,
     });
-    
+
     clearTimeout(timeout);
     return response.ok || response.status === 405; // 405 is expected for GET on MCP endpoint
   } catch {
@@ -157,7 +157,7 @@ async function main(): Promise<void> {
   const ide = detectIde();
   const configPath = ide?.configPath ?? IDE_CONFIGS[0].configPath;
   const ideName = ide?.name ?? 'Unknown IDE';
-  
+
   const config = readMcpConfig(configPath);
   const configExists = config !== null;
   const hasFigma = hasFigmaMcp(config);
@@ -195,7 +195,7 @@ async function main(): Promise<void> {
     // Check if running interactively
     if (process.stdin.isTTY) {
       const shouldAdd = await promptUser(`  ${COLORS.cyan}Add Figma Desktop MCP to ${ideName} config? (y/N): ${COLORS.reset}`);
-      
+
       if (shouldAdd) {
         const newConfig = addFigmaMcp(config);
         if (writeMcpConfig(configPath, newConfig)) {

@@ -25,7 +25,7 @@ export const CategoryMenu: React.FC<CategoryMenuProps> = ({
   onElementClick,
 }) => {
   const { t } = useTranslation();
-  
+
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
 
@@ -40,7 +40,7 @@ export const CategoryMenu: React.FC<CategoryMenuProps> = ({
         <div className="space-y-1">
           {UIKIT_CATEGORIES.map((category) => {
             const isExpanded = selectedCategory === category.id;
-            const implementedCount = category.elements.filter(el => 
+            const implementedCount = category.elements.filter(el =>
               IMPLEMENTED_ELEMENTS.includes(el)
             ).length;
             const hasImplemented = implementedCount > 0;
@@ -57,18 +57,18 @@ export const CategoryMenu: React.FC<CategoryMenuProps> = ({
                 >
                   {tk(category.translationKey)}
                 </ExpandableButton>
-                
+
                 {isExpanded && (
                   <div className="ml-4 space-y-0.5 py-1">
                     {category.elements.map((element) => {
                       const isImplemented = IMPLEMENTED_ELEMENTS.includes(element);
                       if (!isImplemented) return null;
-                      
+
                       const elementId = getElementId(element);
                       const isActiveElement = activeElementId === elementId;
-                      
+
                       const elementTranslationKey = `element_${element.toLowerCase().replace(/\s+/g, '_')}`;
-                      
+
                       return (
                         <MenuItemButton
                           key={element}
@@ -85,7 +85,7 @@ export const CategoryMenu: React.FC<CategoryMenuProps> = ({
             );
           })}
         </div>
-        
+
         <div className="mt-6 p-3 bg-muted/50 rounded-md">
           <TextLoader skeletonClassName="h-4 w-full">
             <p className="text-xs text-muted-foreground">
@@ -103,4 +103,3 @@ export const CategoryMenu: React.FC<CategoryMenuProps> = ({
 };
 
 CategoryMenu.displayName = 'CategoryMenu';
-

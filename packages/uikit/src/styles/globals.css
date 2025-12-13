@@ -6,7 +6,7 @@
  * Theme CSS variables are now generated dynamically from theme objects
  * See: src/styles/themes/applyTheme.ts
  * Single source of truth: src/styles/themes/*.ts files
- * 
+ *
  * Only default values needed for SSR/initial load below
  */
 

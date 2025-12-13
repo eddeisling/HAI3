@@ -5,9 +5,9 @@ import React from 'react';
  * Used in native select dropdowns, accordion, navigation-menu, select
  * Replaces lucide-react ChevronDownIcon for tree-shaking
  */
-export const ChevronDownIcon: React.FC<React.SVGProps<SVGSVGElement>> = ({ 
+export const ChevronDownIcon: React.FC<React.SVGProps<SVGSVGElement>> = ({
   className = '',
-  ...props 
+  ...props
 }) => {
   return (
     <svg

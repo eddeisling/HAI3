@@ -31,7 +31,10 @@
     "arch:unused": "knip --no-exit-code",
     "arch:unused:strict": "knip",
     "arch:graph": "npx dependency-cruiser src/ packages/ --config .dependency-cruiser.cjs --output-type dot | dot -T svg -o dependency-graph.svg",
-    "arch:dot": "npx dependency-cruiser src/ packages/ --config .dependency-cruiser.cjs --output-type dot > dependency-graph.dot && echo '✅ DOT file saved to dependency-graph.dot (view with any DOT viewer or online tools)'"
+    "arch:dot": "npx dependency-cruiser src/ packages/ --config .dependency-cruiser.cjs --output-type dot > dependency-graph.dot && echo '✅ DOT file saved to dependency-graph.dot (view with any DOT viewer or online tools)'",
+    "prek:install": "npx prek install",
+    "prek:run": "npx prek run --all-files",
+    "postinstall": "npx prek install"
   },
   "dependencies": {
     "@hai3/uicore": "*",
@@ -45,13 +48,15 @@
     "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
-    "@hai3/studio": "*",
     "@eslint/js": "9.27.0",
+    "@hai3/studio": "*",
+    "@j178/prek": "0.2.21",
     "@types/lodash": "4.17.20",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.18",
+    "dependency-cruiser": "17.3.2",
     "eslint": "9.27.0",
     "eslint-plugin-react-hooks": "5.0.0",
     "eslint-plugin-unused-imports": "4.1.4",

@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  Button, 
-  IconButton, 
+import {
+  Button,
+  IconButton,
   ButtonVariant,
   ButtonSize,
-  IconButtonSize, 
-  Tooltip, 
-  TooltipTrigger, 
+  IconButtonSize,
+  Tooltip,
+  TooltipTrigger,
   TooltipContent,
   Popover,
   PopoverTrigger,
@@ -66,7 +66,7 @@ export const OverlayElements: React.FC = () => {
   const [notifications, setNotifications] = React.useState(true);
   const [autoUpdate, setAutoUpdate] = React.useState(false);
   const [theme, setTheme] = React.useState("light");
-  
+
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
 
@@ -80,7 +80,7 @@ export const OverlayElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background overflow-hidden">
-          
+
           {/* Basic Context Menu */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-32" inheritColor>
@@ -290,7 +290,7 @@ export const OverlayElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background overflow-hidden">
-          
+
           {/* Basic Dropdown Menu */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-32" inheritColor>
@@ -483,7 +483,7 @@ export const OverlayElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background overflow-hidden">
-          
+
           {/* Basic Hover Card */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-32" inheritColor>
@@ -577,7 +577,7 @@ export const OverlayElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background overflow-hidden">
-          
+
           {/* Basic Popover */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-32" inheritColor>
@@ -835,4 +835,3 @@ export const OverlayElements: React.FC = () => {
 };
 
 OverlayElements.displayName = 'OverlayElements';
-

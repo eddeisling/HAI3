@@ -28,4 +28,3 @@ export const BadgeCheckIcon: React.FC<{ className?: string }> = ({ className = '
     </svg>
   );
 };
-

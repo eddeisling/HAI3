@@ -1,6 +1,6 @@
 # Model
 
-> **TARGET AUDIENCE:** Humans and AI  
+> **TARGET AUDIENCE:** Humans and AI
 > **PURPOSE:** Glossary and domain models for HAI3 architecture
 
 ## Glossary

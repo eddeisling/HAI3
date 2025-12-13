@@ -192,6 +192,7 @@ export async function generateProject(
 
   const devDependencies: Record<string, string> = {
     '@hai3/cli': 'alpha',
+    '@j178/prek': '0.2.21',
     '@types/lodash': '4.17.20',
     '@types/react': '18.3.3',
     '@types/react-dom': '18.3.0',
@@ -205,6 +206,7 @@ export async function generateProject(
     postcss: '8.4.35',
     'postcss-load-config': '6.0.1',
     tailwindcss: '3.4.1',
+    'dependency-cruiser': '17.3.2',
     tsx: '4.20.6',
     typescript: '5.4.2',
     'typescript-eslint': '8.32.1',
@@ -226,7 +228,7 @@ export async function generateProject(
     workspaces: ['eslint-plugin-local'],
     scripts: {
       dev: 'npm run generate:colors && vite',
-      'check:mcp': "npx tsx presets/standalone/scripts/check-mcp.ts",
+      'check:mcp': 'npx tsx scripts/check-mcp.ts',
       build: 'npm run generate:colors && vite build',
       preview: 'vite preview',
       lint: 'npm run build --workspace=eslint-plugin-local && eslint . --max-warnings 0',
@@ -235,6 +237,9 @@ export async function generateProject(
       'arch:check': 'npx tsx scripts/test-architecture.ts',
       'arch:deps':
         'npx dependency-cruiser src/ --config .dependency-cruiser.cjs --output-type err-long',
+      'prek:install': 'npx prek install',
+      'prek:run': 'npx prek run --all-files',
+      postinstall: 'npx prek install',
     },
     dependencies,
     devDependencies,
@@ -245,8 +250,37 @@ export async function generateProject(
     content: JSON.stringify(packageJson, null, 2) + '\n',
   });
 
-  // Config files (eslint.config.js, tsconfig.json, .dependency-cruiser.cjs)
-  // are copied from templates by the manifest - no need to generate here
+  // 5.3 .pre-commit-config.yaml (prek configuration)
+  const preCommitConfig = `# prek configuration - https://github.com/j178/prek
+# Run: npm run prek:install (to install git hooks)
+# Run: npm run prek:run (to run all hooks)
+
+repos:
+  # Built-in hooks (fast, Rust-native)
+  - repo: builtin
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+        exclude: tsconfig\\.json$
+      - id: check-toml
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+
+  # Local hooks for project-specific checks
+  - repo: local
+    hooks:
+      - id: arch-check
+        name: Architecture check
+        entry: npm run arch:check
+        language: system
+        pass_filenames: false
+`;
+  files.push({
+    path: '.pre-commit-config.yaml',
+    content: preCommitConfig,
+  });
 
   return files;
 }

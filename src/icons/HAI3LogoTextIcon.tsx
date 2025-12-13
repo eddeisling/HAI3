@@ -12,10 +12,10 @@ export const APP_LOGO_TEXT_ICON_ID = 'app-logo-text';
  */
 export const HAI3LogoTextIcon: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
-    <svg 
+    <svg
       className={className}
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 60 24" 
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 60 24"
       fill="currentColor"
     >
       <path d="M1 5.98 l4.64 0 l0 5.44 l4.34 0 l0 -5.44 l4.64 0 l0 14.02 l-4.64 0 l0 -5.06 l-4.34 0 l0 5.06 l-4.64 0 l0 -14.02 z"/>

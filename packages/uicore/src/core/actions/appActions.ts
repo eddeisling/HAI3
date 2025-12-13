@@ -11,7 +11,7 @@ import { fetchCurrentUser } from './userActions';
  * Dispatches user fetch - DOES NOT wait for result
  * User language is automatically set by UserFetched effect in appEffects
  * App renders immediately with skeleton loaders while data loads
- * 
+ *
  * @internal
  * This action is internal to uicore and should not be called by applications.
  * It is automatically dispatched by the Layout component on mount.

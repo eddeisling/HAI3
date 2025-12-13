@@ -15,4 +15,3 @@ The Navigation category needs a Pagination component for navigating between page
 - Affected specs: uikit-base
 - Fourth implemented element in Navigation category
 - Reuses existing buttonVariants for consistent styling
-

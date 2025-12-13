@@ -18,4 +18,3 @@ The UI Kit needs a Scroll Area component to provide custom scrollable containers
   - `src/screensets/demo/components/LayoutElements.tsx` (demo examples)
   - `src/screensets/demo/screens/uikit/uikitCategories.ts` (IMPLEMENTED_ELEMENTS)
   - `src/screensets/demo/screens/uikit/i18n/*.json` (translations for 36 languages)
-

@@ -78,4 +78,3 @@ The system SHALL provide Scroll Area translations across all supported languages
 - **WHEN** checking translation files in `src/screensets/demo/screens/uikit/i18n/`
 - **THEN** all 36 language files include Scroll Area translation keys
 - **AND** translations are contextually appropriate for each language
-

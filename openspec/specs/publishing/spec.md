@@ -92,4 +92,3 @@ All HAI3 packages SHALL use ESM-first module format with dual exports for maximu
 - `index.js` - ESM bundle
 - `index.cjs` - CommonJS bundle
 - `index.d.ts` - TypeScript declarations
-

@@ -1242,4 +1242,3 @@ The UI kit translations SHALL provide localized strings for all 36 supported lan
 - **WHEN** viewing the label demo in a non-English language
 - **THEN** all label text, descriptions, and error messages display in the selected language
 - **AND** translations are contextually appropriate for form labeling conventions
-

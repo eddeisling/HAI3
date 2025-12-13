@@ -2,7 +2,7 @@
  * Navigation Effects - Side effects for navigation events
  * Subscribes to navigation events and updates layout slice
  * Implements Flux pattern: Event -> Effect -> Slice Update
- * 
+ *
  * Pattern: 1 slice = 1 effects file (co-located with layout)
  */
 
@@ -22,13 +22,13 @@ export function initNavigationEffects(store: Store): void {
   // Note: The action that emits ScreensetEvents.Changed should also emit MenuEvents.ItemsChanged
   eventBus.on(ScreensetEvents.Changed, ({ screensetId }) => {
     const currentScreenset = store.getState().uicore.layout.currentScreenset;
-    
+
     // Only update if screenset actually changed
     if (currentScreenset !== screensetId) {
       store.dispatch(setCurrentScreenset(screensetId));
     }
   });
-  
+
   // Listen to screen navigation and update slice
   // Note: Action handles screenset switching logic and emits both events
   eventBus.on(NavigationEvents.ScreenNavigated, ({ screenId }) => {

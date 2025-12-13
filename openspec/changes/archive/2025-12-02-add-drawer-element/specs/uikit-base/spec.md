@@ -82,4 +82,3 @@ The system SHALL provide Drawer translations across all supported languages (36 
 - **WHEN** checking translation files in `src/screensets/demo/screens/uikit/i18n/`
 - **THEN** all 36 language files include Drawer translation keys
 - **AND** translations are contextually appropriate for each language
-

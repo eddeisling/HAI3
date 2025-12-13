@@ -16,8 +16,8 @@ import { ThemeEvents } from '../events/eventTypes/themeEvents';
 export const changeTheme = (themeName: string) => {
   return (_dispatch: AppDispatch): void => {
     // Emit event - effect will update slice and apply theme
-    eventBus.emit(ThemeEvents.Changed, { 
-      themeName 
+    eventBus.emit(ThemeEvents.Changed, {
+      themeName
     });
   };
 };

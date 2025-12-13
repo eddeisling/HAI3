@@ -58,7 +58,7 @@ export const HelloWorldScreen: React.FC = () => {
 
   const { t } = useTranslation();
   const Button = uikitRegistry.getComponent(UiKitComponent.Button);
-  
+
   return (
     <div className="flex flex-col gap-8 p-8">
       <div className="flex flex-col gap-4">

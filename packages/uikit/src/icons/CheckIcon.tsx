@@ -22,4 +22,3 @@ export const CheckIcon: React.FC<{ className?: string }> = ({ className = '' }) 
     </svg>
   );
 };
-

@@ -2,7 +2,7 @@
  * Accounts Domain - API Service
  * Service for accounts domain (users, tenants, authentication, permissions)
  * Reflects backend microservice/bounded context architecture
- * 
+ *
  * Vertical Slice: This folder contains everything for the accounts domain:
  * - AccountsApiService.ts (this file)
  * - api.ts (types)

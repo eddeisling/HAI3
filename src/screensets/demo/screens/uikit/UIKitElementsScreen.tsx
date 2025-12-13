@@ -49,31 +49,31 @@ const translations = I18nRegistry.createLoader({
 
 // Dynamic imports for element components (code splitting)
 // Each component will be loaded only when its category is selected
-const DataDisplayElements = lazy(() => 
+const DataDisplayElements = lazy(() =>
   import('../../components/DataDisplayElements').then(m => ({ default: m.DataDisplayElements }))
 );
-const LayoutElements = lazy(() => 
+const LayoutElements = lazy(() =>
   import('../../components/LayoutElements').then(m => ({ default: m.LayoutElements }))
 );
-const ActionElements = lazy(() => 
+const ActionElements = lazy(() =>
   import('../../components/ActionElements').then(m => ({ default: m.ActionElements }))
 );
-const FeedbackElements = lazy(() => 
+const FeedbackElements = lazy(() =>
   import('../../components/FeedbackElements').then(m => ({ default: m.FeedbackElements }))
 );
-const MediaElements = lazy(() => 
+const MediaElements = lazy(() =>
   import('../../components/MediaElements').then(m => ({ default: m.MediaElements }))
 );
-const FormElements = lazy(() => 
+const FormElements = lazy(() =>
   import('../../components/FormElements').then(m => ({ default: m.FormElements }))
 );
-const OverlayElements = lazy(() => 
+const OverlayElements = lazy(() =>
   import('../../components/OverlayElements').then(m => ({ default: m.OverlayElements }))
 );
-const DisclosureElements = lazy(() => 
+const DisclosureElements = lazy(() =>
   import('../../components/DisclosureElements').then(m => ({ default: m.DisclosureElements }))
 );
-const NavigationElements = lazy(() => 
+const NavigationElements = lazy(() =>
   import('../../components/NavigationElements').then(m => ({ default: m.NavigationElements }))
 );
 
@@ -93,7 +93,7 @@ export const UIKitElementsScreen: React.FC = () => {
     if (selectedCategory && !activeElementId) {
       const category = UIKIT_CATEGORIES.find(cat => cat.id === selectedCategory);
       if (category) {
-        const firstImplementedElement = category.elements.find(el => 
+        const firstImplementedElement = category.elements.find(el =>
           IMPLEMENTED_ELEMENTS.includes(el)
         );
         if (firstImplementedElement) {
@@ -107,17 +107,17 @@ export const UIKitElementsScreen: React.FC = () => {
   // Handle category selection
   const handleCategorySelect = (categoryId: string) => {
     setSelectedCategory(categoryId);
-    
+
     // Find first implemented element in the category and set it as active
     const category = UIKIT_CATEGORIES.find(cat => cat.id === categoryId);
     if (category) {
-      const firstImplementedElement = category.elements.find(el => 
+      const firstImplementedElement = category.elements.find(el =>
         IMPLEMENTED_ELEMENTS.includes(el)
       );
       if (firstImplementedElement) {
         const elementId = getElementId(firstImplementedElement);
         setActiveElementId(elementId);
-        
+
         // Scroll to the element instantly
         const targetElement = document.querySelector(`[data-element-id="${elementId}"]`);
         if (targetElement) {
@@ -186,7 +186,7 @@ export const UIKitElementsScreen: React.FC = () => {
 
       <div className="flex gap-8">
         {/* Category Navigation */}
-        <CategoryMenu 
+        <CategoryMenu
           selectedCategory={selectedCategory}
           onCategorySelect={handleCategorySelect}
           activeElementId={activeElementId}
@@ -214,4 +214,3 @@ UIKitElementsScreen.displayName = 'UIKitElementsScreen';
 
 // Default export for lazy loading
 export default UIKitElementsScreen;
-

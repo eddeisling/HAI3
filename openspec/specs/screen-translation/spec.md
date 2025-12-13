@@ -182,4 +182,3 @@ User navigates: Home → HelloWorld → Profile → HelloWorld
 - Use cached screen component (already loaded)
 - Use cached screen translations (already loaded)
 - NOT make new network requests for HelloWorld translations
-

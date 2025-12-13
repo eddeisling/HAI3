@@ -355,4 +355,3 @@ The system SHALL organize Studio-specific UIKit components following screenset p
 - **THEN** it is located in `packages/studio/src/uikit/composite/`
 - **AND** it follows the same pattern as screenset composite components
 - **AND** it can be reused in different contexts within studio
-

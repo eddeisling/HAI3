@@ -15,4 +15,3 @@ The Navigation category needs a Menubar component for building desktop-style men
 - Affected specs: uikit-base
 - Second implemented element in Navigation category (after Breadcrumb)
 - Requires new Radix UI dependency
-

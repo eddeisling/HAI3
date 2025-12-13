@@ -22,31 +22,31 @@ export const AppRouter: React.FC = () => {
   // Routes sync lazily on first access (prevents race conditions)
   const screenIds = routeRegistry.getAllScreenIds();
   const defaultScreenId = screenIds[0]; // First screen as default
-  
+
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         {/* Dynamic route for any screen ID - Layout renders Screen component */}
-        <Route 
-          path="/:screenId" 
+        <Route
+          path="/:screenId"
           element={
             <>
               <RouterSync />
               <Layout />
             </>
-          } 
+          }
         />
-        
+
         {/* Default route - redirect to first screen */}
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
-            defaultScreenId 
+            defaultScreenId
               ? <Navigate to={`/${defaultScreenId}`} replace />
               : <div>No screens available</div>
-          } 
+          }
         />
-        
+
         {/* 404 - redirect to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

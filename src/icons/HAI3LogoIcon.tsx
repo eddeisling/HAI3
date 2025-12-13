@@ -12,10 +12,10 @@ export const APP_LOGO_ICON_ID = 'app-logo';
  */
 export const HAI3LogoIcon: React.FC<{ className?: string }> = ({ className = '' }) => {
   return (
-    <svg 
+    <svg
       className={className}
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 100 100" 
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
       fill="currentColor"
     >
       <path d="M42.817,43.713c-2.543,2.415-6.376,2.188-8.789-0.364c-2.29-2.409-2.315-6.254,0.228-8.663c2.423-2.289,6.376-2.188,8.671,0.229C45.343,37.459,45.231,41.418,42.817,43.713 M64.765,66.849c-2.54,2.409-6.379,2.181-8.68-0.233c-2.404-2.546-2.302-6.248,0.239-8.669c2.414-2.29,6.253-2.312,8.662,0.228C67.282,60.595,67.18,64.553,64.765,66.849"/>

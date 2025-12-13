@@ -29,7 +29,7 @@ export const ScreensetSelector: React.FC<ScreensetSelectorProps> = ({
   className = '',
 }) => {
   const { direction } = useTranslation();
-  
+
   const DropdownMenu = uikitRegistry.getComponent(UiKitComponent.DropdownMenu);
   const DropdownMenuTrigger = uikitRegistry.getComponent(UiKitComponent.DropdownMenuTrigger);
   const DropdownMenuContent = uikitRegistry.getComponent(UiKitComponent.DropdownMenuContent);

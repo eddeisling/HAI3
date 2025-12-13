@@ -7,22 +7,22 @@ export interface ExpandableButtonProps extends React.ButtonHTMLAttributes<HTMLBu
    * Whether the button is in expanded state
    */
   isExpanded?: boolean;
-  
+
   /**
    * Whether the button is in active/selected state
    */
   isActive?: boolean;
-  
+
   /**
    * Optional badge text to display (e.g., count)
    */
   badge?: string | number;
-  
+
   /**
    * Children content (label)
    */
   children: React.ReactNode;
-  
+
   /**
    * Whether to show the chevron icon
    */
@@ -46,15 +46,15 @@ export const ExpandableButton: React.FC<ExpandableButtonProps> = ({
 }) => {
   // Base styles
   const baseStyles = 'w-full flex items-center justify-between px-3 py-2 text-sm font-medium rounded-md transition-colors';
-  
+
   // State-dependent styles
   const stateStyles = isActive
     ? 'bg-accent text-accent-foreground'
     : 'text-foreground hover:bg-accent/50 hover:text-accent-foreground';
-  
+
   // Disabled styles
   const disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : '';
-  
+
   // Chevron styles
   const chevronStyles = `h-4 w-4 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`;
 
@@ -82,4 +82,3 @@ export const ExpandableButton: React.FC<ExpandableButtonProps> = ({
 };
 
 ExpandableButton.displayName = 'ExpandableButton';
-

@@ -89,4 +89,3 @@ The system SHALL provide Chart translations across all supported languages (36 l
 - **WHEN** checking translation files in `src/screensets/demo/screens/uikit/i18n/`
 - **THEN** all 36 language files include Chart translation keys
 - **AND** translations are contextually appropriate for each language
-

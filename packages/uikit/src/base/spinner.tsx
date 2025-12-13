@@ -14,7 +14,7 @@ const Spinner = React.forwardRef<HTMLDivElement, SpinnerProps>(
     // Extract text-* color classes for the icon, keep other classes for wrapper
     const textColorClasses = className?.match(/\btext-\S+/g)?.join(' ') || '';
     const wrapperClasses = trim(className?.replace(/\btext-\S+/g, '') || '');
-    
+
     return (
       <div
         ref={ref}

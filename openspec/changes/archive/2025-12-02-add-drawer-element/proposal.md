@@ -21,4 +21,3 @@ The Layout & Structure category in the UI Kit lists Drawer as a planned element 
   - `src/screensets/demo/components/LayoutElements.tsx`
   - `src/screensets/demo/screens/uikit/uikitCategories.ts`
   - `src/screensets/demo/screens/uikit/i18n/*.json` (36 files)
-

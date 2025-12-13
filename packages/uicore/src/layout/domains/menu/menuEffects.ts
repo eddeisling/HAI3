@@ -2,7 +2,7 @@
  * Menu Effects - Side effects for Menu domain
  * Subscribes to menu events and updates menu slice
  * Implements Flux pattern: Event -> Effect -> Slice Update
- * 
+ *
  * Pattern: 1 slice = 1 effects file (co-located)
  */
 

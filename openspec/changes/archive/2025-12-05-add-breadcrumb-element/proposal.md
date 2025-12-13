@@ -18,4 +18,3 @@ The Navigation category currently has no implemented elements. Breadcrumb is a f
 - First implemented element in Navigation category
 - Reuses existing @radix-ui/react-slot dependency
 - Follows existing patterns from other element implementations
-

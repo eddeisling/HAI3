@@ -34,4 +34,3 @@ export const LoaderIcon: React.FC<{ className?: string }> = ({ className = '' })
     </svg>
   );
 };
-

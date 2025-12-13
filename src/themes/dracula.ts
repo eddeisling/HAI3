@@ -16,7 +16,7 @@ export const DRACULA_THEME_ID = 'dracula' as const;
  */
 const dracula = {
   purple: 'hsl(265 89% 78%)',       // #bd93f9
-  comment: 'hsl(225 27% 51%)',      // #6272a4  
+  comment: 'hsl(225 27% 51%)',      // #6272a4
   pink: 'hsl(326 100% 74%)',        // #ff79c6
   background: 'hsl(231 15% 18%)',   // #282a36
   foreground: 'hsl(60 30% 96%)',    // #f8f8f2

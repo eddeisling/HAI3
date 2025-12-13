@@ -16,7 +16,7 @@ import { screensetRegistry } from '../../screensets/screensetRegistry';
  * Auto-switches to the screenset that contains this screen
  * Emits events for effects to handle state updates
  * Actions are pure functions - effects check if screenset changed
- * 
+ *
  * @param screenId Screen ID to navigate to
  */
 export const navigateToScreen = (screenId: string): void => {
@@ -28,23 +28,23 @@ export const navigateToScreen = (screenId: string): void => {
 
   // Find which screenset contains this screen
   const screensetKey = routeRegistry.getScreensetKeyForScreen(screenId);
-  
+
   if (screensetKey) {
     // Emit screenset change event - effect will check if it actually changed
     // Actions are pure functions and cannot access store state
-    eventBus.emit(ScreensetEvents.Changed, { 
-      screensetId: screensetKey 
+    eventBus.emit(ScreensetEvents.Changed, {
+      screensetId: screensetKey
     });
-    
+
     // Emit menu items change event (actions emit both events, effects only listen)
     const menuItems = screensetRegistry.getMenuItems(screensetKey);
-    eventBus.emit(MenuEvents.ItemsChanged, { 
-      items: menuItems 
+    eventBus.emit(MenuEvents.ItemsChanged, {
+      items: menuItems
     });
   }
 
   // Emit navigation event for effects to handle
-  eventBus.emit(NavigationEvents.ScreenNavigated, { 
-    screenId 
+  eventBus.emit(NavigationEvents.ScreenNavigated, {
+    screenId
   });
 };

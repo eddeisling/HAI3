@@ -27,7 +27,7 @@ export interface TextareaProps
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ className, autoResize = false, minHeight = 50, maxHeight = 350, size = 'default', onChange, ...props }, ref) => {
     const internalRef = React.useRef<HTMLTextAreaElement>(null);
-    
+
     // Merge external ref with internal ref
     React.useImperativeHandle(ref, () => internalRef.current as HTMLTextAreaElement);
 

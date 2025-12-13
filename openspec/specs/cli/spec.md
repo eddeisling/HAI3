@@ -786,4 +786,3 @@ For routing to specific topics, see the ROUTING section in GUIDELINES.md.
 **Given** building CLI templates
 **When** generating IDE rules
 **Then** the system SHALL create `.windsurf/rules/hai3.md` containing a pointer to `.ai/GUIDELINES.md`
-

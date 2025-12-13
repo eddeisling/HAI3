@@ -11,7 +11,7 @@ import { UiKitComponent } from '@hai3/uikit-contracts';
 
 export const Header: React.FC = () => {
   const HeaderUI = uikitRegistry.getComponent(UiKitComponent.Header);
-  
+
   return (
     <HeaderUI>
       <UserInfo />

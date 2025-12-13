@@ -21,29 +21,29 @@ export function RouterSync() {
   const params = useParams<{ screenId: string }>();
 
   const selectedScreen = useAppSelector((state) => state.uicore.layout.selectedScreen);
-  
+
   // URL → Redux: When URL changes, dispatch navigation action
   useEffect(() => {
     const urlScreenId = params.screenId;
-    
+
     if (urlScreenId && routeRegistry.hasScreen(urlScreenId)) {
       // Call action directly (pure function) → effects handle screenset switching and state update
       navigateToScreen(urlScreenId);
     }
-    
+
   }, [params.screenId]); // Only re-run when URL changes, not when selectedScreen changes
-  
+
   // Redux → URL: When Redux state changes, update URL
   useEffect(() => {
     if (selectedScreen) {
       const expectedPath = `/${selectedScreen}`;
       const currentPath = `/${params.screenId}`;
-      
+
       if (expectedPath !== currentPath) {
         navigate(expectedPath, { replace: true });
       }
     }
   }, [selectedScreen, navigate, params.screenId]);
-  
+
   return null;
 }

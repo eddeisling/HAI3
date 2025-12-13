@@ -22,4 +22,3 @@ export const ChevronRightIcon: React.FC<{ className?: string }> = ({ className =
     </svg>
   );
 };
-

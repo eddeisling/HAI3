@@ -2,7 +2,7 @@
  * UI Kit Registry Service
  * Unified registry for UI components and icons
  * Allows applications to register UI Kit implementations at runtime
- * 
+ *
  * OPEN/CLOSED PRINCIPLE:
  * - Registry is CLOSED for modification
  * - UI elements register themselves at app level

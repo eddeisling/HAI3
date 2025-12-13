@@ -63,4 +63,3 @@ const SliderThumb = React.forwardRef<
 SliderThumb.displayName = SliderPrimitive.Thumb.displayName
 
 export { Slider, SliderTrack, SliderRange, SliderThumb }
-

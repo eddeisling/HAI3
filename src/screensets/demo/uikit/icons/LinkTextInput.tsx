@@ -7,9 +7,9 @@ export interface LinkTextInputProps extends Omit<React.ComponentProps<typeof Inp
  * LinkTextInput Component
  * Text input component with monospace font styling for displaying links/URLs
  */
-export const LinkTextInput: React.FC<LinkTextInputProps> = ({ 
+export const LinkTextInput: React.FC<LinkTextInputProps> = ({
   className = '',
-  ...props 
+  ...props
 }) => {
   return (
     <Input

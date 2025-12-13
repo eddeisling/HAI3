@@ -24,4 +24,3 @@ export const MoreHorizontalIcon: React.FC<{ className?: string }> = ({ className
     </svg>
   );
 };
-

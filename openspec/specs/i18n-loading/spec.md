@@ -260,4 +260,3 @@ const hardcodedKey = 'screenset.chat:name'; // ❌ Won't update if CHAT_SCREENSE
 **When** constructing translation keys
 **Then** template literals SHOULD be used to ensure automatic updates during duplication
 **And** hardcoded namespace strings SHOULD be avoided
-

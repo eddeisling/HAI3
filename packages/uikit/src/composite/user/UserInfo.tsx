@@ -34,7 +34,7 @@ export const UserInfo = React.forwardRef<HTMLDivElement, UserInfoProps>(
 
     const initials = getInitials();
     const displayText = displayName || email || 'User';
-    
+
     if (loading) {
       return (
         <div ref={ref} className={cn('flex items-center gap-2 text-sm', className)}>
@@ -43,7 +43,7 @@ export const UserInfo = React.forwardRef<HTMLDivElement, UserInfoProps>(
         </div>
       );
     }
-    
+
     return (
       <div
         ref={ref}

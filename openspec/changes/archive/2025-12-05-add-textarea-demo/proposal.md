@@ -13,4 +13,3 @@ The Textarea component is already implemented in the UI kit but lacks usage exam
 ## Impact
 - Affected specs: uikit-base
 - Second Forms & Inputs element with demo examples
-

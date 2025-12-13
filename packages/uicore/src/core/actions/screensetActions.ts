@@ -19,26 +19,26 @@ import { screensetRegistry } from '../../screensets/screensetRegistry';
 export const selectScreenset = (screensetId: string) => {
   return (_dispatch: AppDispatch): void => {
     const screenset = screensetRegistry.get(screensetId);
-    
+
     if (!screenset) {
       console.warn(`Screenset not found: ${screensetId}`);
       return;
     }
 
     // Emit screenset change event
-    eventBus.emit(ScreensetEvents.Changed, { 
-      screensetId 
+    eventBus.emit(ScreensetEvents.Changed, {
+      screensetId
     });
 
     // Emit menu items change event
-    eventBus.emit(MenuEvents.ItemsChanged, { 
+    eventBus.emit(MenuEvents.ItemsChanged, {
       items: screensetRegistry.getMenuItems(screensetId)
     });
 
     // Navigate to default screen of the new screenset
     if (screenset.defaultScreen) {
-      eventBus.emit(NavigationEvents.ScreenNavigated, { 
-        screenId: screenset.defaultScreen 
+      eventBus.emit(NavigationEvents.ScreenNavigated, {
+        screenId: screenset.defaultScreen
       });
     }
   };

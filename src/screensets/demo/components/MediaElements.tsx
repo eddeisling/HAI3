@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselPrevious, 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
   CarouselNext,
-  Slider, 
-  SliderTrack, 
-  SliderRange, 
+  Slider,
+  SliderTrack,
+  SliderRange,
   SliderThumb,
   Card,
   CardContent
@@ -24,10 +24,10 @@ import { UI_KIT_ELEMENTS_SCREEN_ID } from "../ids";
  */
 export const MediaElements: React.FC = () => {
   const { t } = useTranslation();
-  
+
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
-  
+
   const [sliderValue, setSliderValue] = useState([50]);
   const [customSliderValue, setCustomSliderValue] = useState([50]);
 
@@ -41,7 +41,7 @@ export const MediaElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-6 p-6 border border-border rounded-lg bg-background overflow-hidden">
-          
+
           {/* Basic Carousel */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-32" inheritColor>
@@ -199,7 +199,7 @@ export const MediaElements: React.FC = () => {
                 <span>100</span>
               </div>
             </div>
-            
+
             {/* Customized slider */}
             <div className="flex flex-col gap-2">
               <Slider
@@ -225,4 +225,3 @@ export const MediaElements: React.FC = () => {
 };
 
 MediaElements.displayName = 'MediaElements';
-

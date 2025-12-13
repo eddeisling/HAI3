@@ -33,4 +33,3 @@ export const ShadcnIcon: React.FC<{ className?: string }> = ({ className = '' })
     </svg>
   );
 };
-

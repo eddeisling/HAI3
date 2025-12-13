@@ -44,4 +44,3 @@ The UI kit translations SHALL provide localized strings for all 36 supported lan
 Given a user viewing the navigation menu demo in a non-English language
 When translations are loaded
 Then all navigation menu labels display in the selected language
-

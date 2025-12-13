@@ -22,4 +22,3 @@ export const CircleIcon: React.FC<{ className?: string }> = ({ className = '' })
     </svg>
   );
 };
-

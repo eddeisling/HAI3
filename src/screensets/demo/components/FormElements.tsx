@@ -15,13 +15,13 @@ import { UI_KIT_ELEMENTS_SCREEN_ID } from "../ids";
  */
 export const FormElements: React.FC = () => {
   const { t } = useTranslation();
-  
+
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
-  
+
   const [airplaneMode, setAirplaneMode] = useState(false);
   const [otpValue, setOtpValue] = useState("");
-  
+
   // Calendar state
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(undefined);
   const [timeZone, setTimeZone] = useState<string | undefined>(undefined);
@@ -49,7 +49,7 @@ export const FormElements: React.FC = () => {
           </h2>
         </TextLoader>
         <div className="flex flex-col gap-8 p-6 border border-border rounded-lg bg-background overflow-hidden">
-          
+
           {/* Selected Date with TimeZone */}
           <div className="flex flex-col gap-2">
             <TextLoader skeletonClassName="h-4 w-40" inheritColor>
@@ -718,4 +718,3 @@ export const FormElements: React.FC = () => {
 };
 
 FormElements.displayName = 'FormElements';
-
