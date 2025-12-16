@@ -27,6 +27,7 @@ import {
   Progress,
   Skeleton,
   Spinner,
+  toast,
 } from '@hai3/uikit';
 import { useTranslation, TextLoader } from '@hai3/uicore';
 import { AlertCircleIcon, BellIcon, CheckCircle2Icon, CloudIcon, PopcornIcon, RefreshCcwIcon } from 'lucide-react';
@@ -36,7 +37,7 @@ import { UI_KIT_ELEMENTS_SCREEN_ID } from "../ids";
 
 /**
  * Feedback Elements Component
- * Contains Alert, Alert Dialog, Empty, Progress, Spinner, and Skeleton demonstrations
+ * Contains Alert, Alert Dialog, Empty, Progress, Spinner, Skeleton, and Sonner demonstrations
  * Uses parent screen (UIKitElementsScreen) translations
  */
 export const FeedbackElements: React.FC = () => {
@@ -398,6 +399,87 @@ export const FeedbackElements: React.FC = () => {
               <Skeleton className="h-4 w-[250px]" />
               <Skeleton className="h-4 w-[200px]" />
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Sonner Element Block */}
+      <div data-element-id="element-sonner" className="flex flex-col gap-4">
+        <TextLoader skeletonClassName="h-8 w-24">
+          <h2 className="text-2xl font-semibold">
+            {tk('sonner_heading')}
+          </h2>
+        </TextLoader>
+        <div className="flex items-center justify-center p-6 border border-border rounded-lg bg-background overflow-hidden">
+          <div className="flex flex-wrap gap-2">
+            <TextLoader skeletonClassName="h-9 w-20" inheritColor>
+              <Button
+                variant={ButtonVariant.Outline}
+                onClick={() =>
+                  toast(tk('sonner_default_message'), {
+                    description: tk('sonner_default_description'),
+                    action: {
+                      label: tk('sonner_action_undo'),
+                      onClick: () => console.log('Undo'),
+                    },
+                  })
+                }
+              >
+                {tk('sonner_default_label')}
+              </Button>
+            </TextLoader>
+            <TextLoader skeletonClassName="h-9 w-20" inheritColor>
+              <Button
+                variant={ButtonVariant.Outline}
+                onClick={() => toast.success(tk('sonner_success_message'))}
+              >
+                {tk('sonner_success_label')}
+              </Button>
+            </TextLoader>
+            <TextLoader skeletonClassName="h-9 w-20" inheritColor>
+              <Button
+                variant={ButtonVariant.Outline}
+                onClick={() => toast.info(tk('sonner_info_message'))}
+              >
+                {tk('sonner_info_label')}
+              </Button>
+            </TextLoader>
+            <TextLoader skeletonClassName="h-9 w-20" inheritColor>
+              <Button
+                variant={ButtonVariant.Outline}
+                onClick={() => toast.warning(tk('sonner_warning_message'))}
+              >
+                {tk('sonner_warning_label')}
+              </Button>
+            </TextLoader>
+            <TextLoader skeletonClassName="h-9 w-20" inheritColor>
+              <Button
+                variant={ButtonVariant.Outline}
+                onClick={() => toast.error(tk('sonner_error_message'))}
+              >
+                {tk('sonner_error_label')}
+              </Button>
+            </TextLoader>
+            <TextLoader skeletonClassName="h-9 w-20" inheritColor>
+              <Button
+                variant={ButtonVariant.Outline}
+                onClick={() => {
+                  toast.promise<{ name: string }>(
+                    () =>
+                      new Promise((resolve) =>
+                        setTimeout(() => resolve({ name: tk('sonner_promise_success') }), 2000)
+                      ),
+                    {
+                      loading: tk('sonner_promise_loading'),
+                      success: (data) => data.name,
+                      error: tk('sonner_promise_error'),
+                    }
+                  );
+                }}
+              >
+                {tk('sonner_promise_label')}
+              </Button>
+            </TextLoader>
           </div>
         </div>
       </div>

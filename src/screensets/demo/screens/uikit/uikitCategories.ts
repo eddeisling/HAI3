@@ -208,6 +208,7 @@ export const IMPLEMENTED_ELEMENTS = [
   'Sheet',
   'Skeleton',
   'Slider',
+  'Sonner',
   'Spinner',
   'Switch',
   'Table',
