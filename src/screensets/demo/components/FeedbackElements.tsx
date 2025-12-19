@@ -27,7 +27,7 @@ import {
   Progress,
   Skeleton,
   Spinner,
-  toast,
+  useToast,
 } from '@hai3/uikit';
 import { useTranslation, TextLoader } from '@hai3/uicore';
 import { AlertCircleIcon, BellIcon, CheckCircle2Icon, CloudIcon, PopcornIcon, RefreshCcwIcon } from 'lucide-react';
@@ -42,6 +42,7 @@ import { UI_KIT_ELEMENTS_SCREEN_ID } from "../ids";
  */
 export const FeedbackElements: React.FC = () => {
   const { t } = useTranslation();
+  const { toast, success, info, warning, error, promise } = useToast();
 
   // Helper function to access parent screen's translations
   const tk = (key: string) => t(`screen.${DEMO_SCREENSET_ID}.${UI_KIT_ELEMENTS_SCREEN_ID}:${key}`);
@@ -431,7 +432,7 @@ export const FeedbackElements: React.FC = () => {
             <TextLoader skeletonClassName="h-9 w-20" inheritColor>
               <Button
                 variant={ButtonVariant.Outline}
-                onClick={() => toast.success(tk('sonner_success_message'))}
+                onClick={() => success(tk('sonner_success_message'))}
               >
                 {tk('sonner_success_label')}
               </Button>
@@ -439,7 +440,7 @@ export const FeedbackElements: React.FC = () => {
             <TextLoader skeletonClassName="h-9 w-20" inheritColor>
               <Button
                 variant={ButtonVariant.Outline}
-                onClick={() => toast.info(tk('sonner_info_message'))}
+                onClick={() => info(tk('sonner_info_message'))}
               >
                 {tk('sonner_info_label')}
               </Button>
@@ -447,7 +448,7 @@ export const FeedbackElements: React.FC = () => {
             <TextLoader skeletonClassName="h-9 w-20" inheritColor>
               <Button
                 variant={ButtonVariant.Outline}
-                onClick={() => toast.warning(tk('sonner_warning_message'))}
+                onClick={() => warning(tk('sonner_warning_message'))}
               >
                 {tk('sonner_warning_label')}
               </Button>
@@ -455,7 +456,7 @@ export const FeedbackElements: React.FC = () => {
             <TextLoader skeletonClassName="h-9 w-20" inheritColor>
               <Button
                 variant={ButtonVariant.Outline}
-                onClick={() => toast.error(tk('sonner_error_message'))}
+                onClick={() => error(tk('sonner_error_message'))}
               >
                 {tk('sonner_error_label')}
               </Button>
@@ -464,7 +465,7 @@ export const FeedbackElements: React.FC = () => {
               <Button
                 variant={ButtonVariant.Outline}
                 onClick={() => {
-                  toast.promise<{ name: string }>(
+                  promise<{ name: string }>(
                     () =>
                       new Promise((resolve) =>
                         setTimeout(() => resolve({ name: tk('sonner_promise_success') }), 2000)
