@@ -15,7 +15,7 @@
 - Use provided hooks for state access (not raw react-redux).
 - Screen translations via `useScreenTranslations()` hook.
 - Wrap translated content with `<TextLoader>` to prevent FOUC.
-- NO layout components here (use @hai3/uikit or app code).
+- NO layout components here (use the configured UI kit or app code).
 
 ## PROVIDER SETUP
 ```tsx

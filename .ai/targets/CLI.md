@@ -61,7 +61,7 @@
 
 ## PROJECT GENERATOR
 - REQUIRED: Include eslint-plugin-unused-imports in devDependencies.
-- REQUIRED: Include @hai3/uikit/styles import when uikit=hai3.
+- REQUIRED: Include the default UI kit styles import (users can swap UI kit in main.tsx).
 - REQUIRED: Use workspace pattern for eslint-plugin-local.
 - FORBIDDEN: Hardcode package versions (except for initial template).
 

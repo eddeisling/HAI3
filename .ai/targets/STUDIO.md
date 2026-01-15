@@ -13,7 +13,7 @@
 ## CRITICAL RULES
 - Studio is presentational and tooling-only; no business or domain logic.
 - Studio reads and controls app state through @hai3/react hooks and actions.
-- Studio uses @hai3/uikit components directly (do not use uikitRegistry).
+- Studio uses the configured UI kit components directly (do not use uikitRegistry).
 - All user-facing text uses i18n namespace "studio:key" via useTranslation().
 - Studio UI state (position, size, collapsed, visible) lives in React state or context, not Redux.
 - Persistence (localStorage) must be event-driven (see Event and Persistence Rules).
@@ -33,7 +33,7 @@
 - DETECT: grep -rn "localStorage.setItem" packages/studio/src/{sections,hooks}/
 
 ## UI KIT AND STYLING RULES
-- REQUIRED: Use @hai3/uikit base and composite components; do not create raw HTML controls.
+- REQUIRED: Use the configured UI kit base and composite components; do not create raw HTML controls.
 - REQUIRED: Follow STYLING.md for units, tokens, and dark mode behavior.
 - REQUIRED: Use a shared glassmorphism pattern or composite for Studio shell.
 - FORBIDDEN: Hex color literals, inline style props, or external CSS files for Studio.
@@ -55,7 +55,7 @@
 
 ## DEPENDENCY RULES
 - REQUIRED: @hai3/react and @hai3/framework as peer dependencies.
-- REQUIRED: @hai3/uikit as direct dependency.
+- REQUIRED: The configured UI kit as direct dependency.
 - FORBIDDEN: Importing from app-level src/** or screensets.
 
 ## INTEGRATION RULES
@@ -68,7 +68,7 @@
 - [ ] Controls read app state via @hai3/react hooks and emit events via eventBus.
 - [ ] All text uses t("studio:key") and follows @hai3/i18n loader pattern.
 - [ ] No direct localStorage usage in components or hooks; persistence handled in effects.
-- [ ] Components imported from @hai3/uikit; no raw HTML controls.
+- [ ] Components imported from the configured UI kit; no raw HTML controls.
 - [ ] Styling follows STYLING.md; no hex colors or inline styles.
 - [ ] Z-index and portal behavior follow the high z-index panel plus shared portal container pattern.
 - [ ] No imports from app-level src/** or screensets.

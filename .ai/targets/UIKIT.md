@@ -8,11 +8,11 @@
 ## SCOPE
 - All code under packages/uikit/**.
 - UI Kit is presentational only; no state management, no business logic.
-- All types and contracts are defined within @hai3/uikit itself.
+- All types and contracts are defined within the configured UI kit.
 
 ## CRITICAL RULES
-- Base components come from shadcn; composites are built from base components.
-- No custom base components; if missing, generate via "npx shadcn add <component>".
+- Base components come from the configured UI kit; composites are built from base components.
+- No custom base components; if missing, add via the UI kit's component system.
 - All component types, props, and IDs must follow UiKitComponent enum and contract types.
 - Icons live in icons/ and are exported as React components (tree-shakeable); direct imports only.
 - FORBIDDEN: Registry patterns, runtime registration, or icon lookups.
@@ -35,7 +35,7 @@
 
 ## PRE-DIFF CHECKLIST
 - [ ] Base or composite placement is correct.
-- [ ] Component props and types match @hai3/uikit contracts.
+- [ ] Component props and types match the configured UI kit contracts.
 - [ ] No Redux, effects, or business logic added.
 - [ ] Icons exported from icons/, no string literal IDs.
 - [ ] Skeleton used for loading states where needed.

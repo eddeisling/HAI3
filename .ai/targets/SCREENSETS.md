@@ -11,7 +11,7 @@
 - Screensets may define local actions, events, slices, effects, API services, and localization.
 
 ## CRITICAL RULES
-- REQUIRED: Use @hai3/uikit components; manual styling only in uikit/base/.
+- REQUIRED: Use the configured UI kit components; manual styling only in uikit/base/.
 - Data flow must follow EVENTS.md.
 - State management must follow @hai3/state Redux+Flux pattern.
 - Screensets are isolated; no hardcoded screenset names in shared code.
@@ -72,7 +72,7 @@
 - FORBIDDEN: Storing React components as icons (causes Redux serialization warnings).
 
 ## SCREENSET UI KIT RULES
-- REQUIRED: Prioritize global @hai3/uikit components; create local only if missing.
+- REQUIRED: Prioritize the configured UI kit components; create local only if missing.
 - REQUIRED: Screenset uikit/ structure: base/, composite/, icons/ (mirrors global).
 - REQUIRED: uikit/base/ for rare primitives; needs strong justification.
 - REQUIRED: uikit/composite/ for screenset-specific composites (value/onChange).
@@ -90,7 +90,7 @@
 - DETECT: eslint local/screen-inline-components
 
 ## PRE-DIFF CHECKLIST
-- [ ] @hai3/uikit used; local uikit only if missing (inline styles in base/ only).
+- [ ] Configured UI kit used; local uikit only if missing (inline styles in base/ only).
 - [ ] Slices use registerSlice with RootState augmentation.
 - [ ] No direct slice imports; no barrel exports in events/ or effects/.
 - [ ] Icons exported; API service isolated; events/effects split by domain.

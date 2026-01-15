@@ -43,7 +43,7 @@ Check for violations in each category:
 - [ ] No hex colors or inline styles
 - [ ] Use theme tokens only
 - [ ] rem-based units (px only for borders)
-- [ ] @hai3/uikit components only
+- [ ] Configured UI kit components only
 
 ### Registry Rules
 - [ ] Self-registration used
@@ -57,7 +57,7 @@ Check for violations in each category:
 - [ ] Mocks in app layer
 
 ### Screenset Rules
-- [ ] Uses @hai3/uikit components
+- [ ] Uses the configured UI kit components
 - [ ] Slices registered via registerSlice()
 - [ ] i18n loader registered
 - [ ] All text uses t()
