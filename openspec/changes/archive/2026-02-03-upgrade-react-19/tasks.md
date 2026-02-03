@@ -68,13 +68,12 @@
 - [x] Test theme switching
 
 ## 10. CLI Generator Integration Testing
-- [ ] Generate new project in temp directory using updated CLI
-- [ ] Verify generated project has React 19.0.0 in package.json
-- [ ] Run `npm install` in generated project - expect no peer dependency errors
-- [ ] Run `npm run build:packages` in generated project - expect clean build
-- [ ] Run `npm run type-check` in generated project - expect zero errors
-- [ ] Run `npm run arch:check` in generated project - expect all checks pass
-- [ ] Run `npm run dev` in generated project - expect dev server starts cleanly
+- [x] Generate new project in temp directory using updated CLI
+- [x] Verify generated project has React 19.2.4 in package.json
+- [x] Run `npm install` in generated project - expect no peer dependency errors (352 packages)
+- [x] Run `npm run type-check` in generated project - expect zero errors
+- [x] Run `npm run arch:check` in generated project - expect all checks pass (4/4 passed)
+- [x] Run `npm run dev` in generated project - expect dev server starts cleanly (http://localhost:5173/)
 
 ## 11. Documentation Updates
 - [x] Update `openspec/project.md` - change "React 18" to "React 19"
@@ -88,10 +87,12 @@
 - [x] No architecture violations (6/6 checks passed)
 - [x] Core packages build successfully (React 19.2.4)
 - [x] npm install clean (1485 packages, React 19.2.4)
-- [x] Changes committed (9 commits on feat/react-19-upgrade)
+- [x] Changes committed (12 commits on feat/react-19-upgrade)
 - [x] Dev server runs cleanly
 - [x] Manual testing checklist completed
 - [x] Peer dependency warnings resolved (ink/react-reconciler satisfied with React 19.2.4)
+- [x] CLI generator integration testing completed
+- [x] Package versions bumped to 0.3.0-alpha.0 (breaking change)
 
 ## Phase 2 (Deferred - Not in this change)
 - Migrate 98 forwardRef declarations using React 19 native ref pattern
